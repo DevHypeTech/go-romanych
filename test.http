@@ -1,0 +1,33 @@
+GET http://localhost:3000
+
+
+###
+
+GET http://localhost:3000/ping
+
+
+###
+
+POST http://localhost:3000/v1/journal/start
+Content-Type: application/json
+
+{
+  "UserId": 666
+}
+
+###
+
+POST http://localhost:3000/v1/journal/end
+Content-Type: application/json
+
+{
+  "UserId": 123123
+}
+
+###
+
+GET http://localhost:3000/v1/entry/666
+
+###
+
+GET http://localhost:3000/v1/entry/999
